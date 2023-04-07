@@ -3,7 +3,7 @@ package fundamentals;
 public class inference {
     public static void main(String[] args) {
 
-        double a = 4.5;
+        double a = 4.5F;
 
         System.out.println(a);
 
