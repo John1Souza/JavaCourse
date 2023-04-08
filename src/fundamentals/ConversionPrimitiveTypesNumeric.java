@@ -14,5 +14,9 @@ public class ConversionPrimitiveTypesNumeric {
         int c = 127;
         byte d = (byte) c;
         System.out.println(d);
+
+        double e = 1.9999999;
+        int f = (int) e;
+        System.out.println(f);
     }
 }
