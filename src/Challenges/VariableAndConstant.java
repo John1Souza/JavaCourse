@@ -8,15 +8,15 @@ public class VariableAndConstant {
 		
 		Scanner tempInFahrenheit = new Scanner(System.in);
 		
-		final int thirtyTwo = 32;
-		final Double five = 5.0;
-		final Double nine = 9.0;
+		final double adjust = 32;
+		final Double factor = 5.0/9.0;
+		
 		
 		System.out.println("Please, insert the ºF temperature for conversion: ");
 		var fahrenheit = Double.parseDouble(tempInFahrenheit.next());
-		var celsius = (Double)((fahrenheit - thirtyTwo)*(five/nine));
+		var celsius = (Double)((fahrenheit - adjust)*(factor));
 		
-		System.out.printf("The %.4fºF temperature converted to ºC, is %.4fºC", fahrenheit, celsius);
+		System.out.printf("%.2fºF temperature converted to ºC, is %.2fºC", fahrenheit, celsius);
 		
 		tempInFahrenheit.close();
 	}
