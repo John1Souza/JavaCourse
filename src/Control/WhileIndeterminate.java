@@ -1,8 +1,8 @@
-package Loops;
+package Control;
 
 import java.util.Scanner;
 
-public class While {
+public class WhileIndeterminate {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
