@@ -6,6 +6,15 @@ public class ProductMethod {
     double price;
     double discount;
 
+    ProductMethod(String initialName, double productPrice, double storeDiscount){
+        name = initialName;
+        price = productPrice;
+        discount = storeDiscount;
+    }
+
+    ProductMethod(){
+
+    }
     double priceWithDiscount (){
         return price * (1 - discount);
     }

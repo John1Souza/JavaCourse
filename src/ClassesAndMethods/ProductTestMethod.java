@@ -2,10 +2,10 @@ package ClassesAndMethods;
 
 public class ProductTestMethod {
     public static void main(String[] args) {
-        ProductMethod p1 = new ProductMethod();
-        p1.name = "Notebook";
-        p1.price = 4356.89;
-        p1.discount = 0.25;
+        ProductMethod p1 = new ProductMethod("Notebook", 4356.89, 0.25);
+        // p1.name = "Notebook";
+        // p1.price = 4356.89;
+        // p1.discount = 0.25;
 
         var p2 = new ProductMethod();
         p2.name = "Black pen";
