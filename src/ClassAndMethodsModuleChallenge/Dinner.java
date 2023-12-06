@@ -15,7 +15,10 @@ public class Dinner {
         johnDoe.weight = johnDoe.eat(spaguette.foodWeight);
 
 
-        System.out.printf("\nAfter eat one %s with %.2fKg and %s with %.2fKg, %s have %.2fKg of weight.", sushi.foodName, sushi.foodWeight, spaguette.foodName, spaguette.foodWeight, johnDoe.name, johnDoe.weight);
+        System.out.printf("\nAfter eat one %s with %.2fKg and %s with %.2fKg, %s have %.2fKg of weight.",
+                sushi.foodName, sushi.foodWeight,
+                spaguette.foodName, spaguette.foodWeight,
+                johnDoe.name, johnDoe.weight);
 
     }
 }
