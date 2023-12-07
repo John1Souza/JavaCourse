@@ -3,7 +3,7 @@ package ArraysAndCollections;
 import java.util.Arrays;
 
 //import java.util.Scanner;
-public class Array01 {
+public class ExerciseForeach {
 
 
     public static void main(String[] args) {
@@ -21,8 +21,11 @@ public class Array01 {
         //System.out.println(noteStudentA[4]);
 
         double sumStudentA = 0;
-        for (int i = 0; i < noteStudentA.length; i++) {
-            sumStudentA += noteStudentA[i];
+        //for (int i = 0; i < noteStudentA.length; i++) {
+        //    sumStudentA += noteStudentA[i];
+        //}
+        for (double student : noteStudentA) {
+            sumStudentA += student;
         }
 
         System.out.println("the average of the Student A is: " +
@@ -32,8 +35,12 @@ public class Array01 {
         double[] noteStudentB = { 6.9, 8.9, storedNote, 10 };
 
         double sumStudentB = 0;
-        for (int i = 0; i < noteStudentB.length; i++) {
-            sumStudentB += noteStudentB[i];
+        //for (int i = 0; i < noteStudentB.length; i++) {
+        //    sumStudentB += noteStudentB[i];
+        //}
+
+        for(double student : noteStudentB){
+            sumStudentB += student;
         }
         System.out.println("the average of the Student B is: " +
                 (sumStudentB / noteStudentB.length));
