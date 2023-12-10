@@ -1,4 +1,4 @@
-package OO.Composition.ProposedExercise;
+package OO.Composition.ProposedExercise.ProposedEx01;
 
 public class CustomerTest {
     public static void main(String[] args) {

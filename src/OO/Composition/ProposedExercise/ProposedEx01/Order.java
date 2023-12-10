@@ -1,4 +1,4 @@
-package OO.Composition.ProposedExercise;
+package OO.Composition.ProposedExercise.ProposedEx01;
 
 import java.util.ArrayList;
 
