@@ -1,10 +1,10 @@
-package OO.Inheritance;
+package OO.Inheritance.Challenge03;
 
 public class Monster extends Player {
-    Monster(){
+    public Monster(){
         super(0, 0);
     }
-    Monster(int x, int y){
+    public Monster(int x, int y){
         super(x, y);
     }
 }

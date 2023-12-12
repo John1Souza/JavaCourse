@@ -1,19 +1,19 @@
-package OO.Inheritance;
+package OO.Inheritance.Challenge03;
 
 public class Player {
 
-    int life = 100;
-    int x;
-    int y;
+    public int life = 100;
+    public int x;
+    public int y;
 
 //    Player(){
 //        this(0, 0);
 //    }
-    Player(int x, int y){
+    protected  Player(int x, int y){
         this.x = x;
         this.y = y;
     }
-    boolean attack(Player opponent){
+    public boolean attack(Player opponent){
         int deltaX = Math.abs(x - opponent.x);
         int deltaY = Math.abs(y - opponent.y);
 
@@ -27,7 +27,7 @@ public class Player {
             return true;
         }
     }
-    boolean walk(Direction direction){
+    public boolean walk(Direction direction){
         switch (direction){
             case NORTH:
                 y++;
