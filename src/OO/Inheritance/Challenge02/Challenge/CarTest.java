@@ -16,7 +16,8 @@ public class CarTest {
 
 
         //Ferrari laFerrari = new Ferrari();
-        Car laFerrari = new Ferrari(350);
+        Ferrari laFerrari = new Ferrari(350);
+        laFerrari.onTurbo();
 
 
         laFerrari.accelerate();

@@ -3,17 +3,17 @@ package OO.Inheritance.Challenge02.Challenge;
 public class Car {
     int currentSpeed = 50;
     final int MAX_SPEED;
-    int delta = 5;
+    private int delta = 5;
 
 
     Car(int maxSpeed){
         MAX_SPEED = maxSpeed;
     }
     int accelerate(){
-        if(currentSpeed + delta > MAX_SPEED){
+        if(currentSpeed + getDelta() > MAX_SPEED){
             return currentSpeed = MAX_SPEED;
         }else {
-            currentSpeed += delta;
+            currentSpeed += getDelta();
         }
         return 0;
     }
@@ -24,5 +24,13 @@ public class Car {
         }else{
             return 0;
         }
+    }
+
+    public int getDelta() {
+        return delta;
+    }
+
+    public void setDelta(int delta) {
+        this.delta = delta;
     }
 }

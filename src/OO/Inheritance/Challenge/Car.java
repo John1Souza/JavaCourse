@@ -1,6 +1,6 @@
 package OO.Inheritance.Challenge;
 
-public class Car {
+public class Car{
     int currentSpeed = 50;
 
     int accelerate(){
