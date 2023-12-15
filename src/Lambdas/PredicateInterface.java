@@ -2,7 +2,7 @@ package Lambdas;
 
 import java.util.function.Predicate;
 
-public class InterfacePredicate {
+public class PredicateInterface {
     public static void main(String[] args) {
         Predicate<Product> isExpensive = product ->
                 (product.price * (1 - product.discount)) >= 750;

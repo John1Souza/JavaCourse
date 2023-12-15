@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class InterfaceConsumer {
+public class ConsumerInterface {
     public static void main(String[] args) {
         Consumer<Product> print = product ->
                 System.out.println(product.name + "!!!");
