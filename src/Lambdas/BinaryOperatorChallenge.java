@@ -15,7 +15,9 @@ public class BinaryOperatorChallenge {
         System.out.println("GOOD!!!");
 
         System.out.println("<----------------------------------------------------------------------------->");
+
         // 1. A partir do produto calcular o preço real
+
         System.out.println("PRODUCT REAL PRICE");
         System.out.println();
         UnaryOperator<Double> realPrice = (price) ->
@@ -27,7 +29,9 @@ public class BinaryOperatorChallenge {
                 product.name, (product.discount * 100), productWithDiscount);
 
         System.out.println("\n<----------------------------------------------------------------------------->");
+
         // 2. Imposto Municipal: >= 2500 (8,5%)/ < 2500 (Isento)
+
         System.out.println("MUNICIPAL TAX CALCULATION");
         Function<Double, Double> municipalTax = (price) -> (price >= 2500) ? (price * 0.085) : price;
 
