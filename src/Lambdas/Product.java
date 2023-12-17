@@ -1,6 +1,6 @@
 package Lambdas;
 
-public class Product extends Object{
+public class Product{
     final String name;
     final double price;
     final double discount;
@@ -11,6 +11,10 @@ public class Product extends Object{
         this.discount = discount;
     }
 
+
+    public void toTwoDecimalPlaces(){
+        System.out.printf("%.2f", this.price);
+    }
     public String toString(){
         double finalPrice = price * (1 - discount);
         return name +
