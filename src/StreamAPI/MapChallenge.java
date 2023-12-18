@@ -26,15 +26,39 @@ public class MapChallenge {
         * Integer.
         * */
 
-        // 1 - Numero para string binaria... 6 => "110"
-        nums.stream().map(MapChallengeMethods.value)
-                .map(MapChallengeMethods::returnQuotient)
-                .forEach(print);
+        //1 - Numero para string binaria... 6 => "110"
+        System.out.println("<==================>");
+        System.out.println("Int to BinaryString");
+        System.out.println("<==================>");
+        nums.stream().map(MapChallengeMethods::returnBinaryString)
+                .forEachOrdered(string -> {
+                    System.out.printf("| %s ", string);
+                });
 
         // 2 - Inverter a string... "110" => "011"
+        System.out.println("\n<==================>");
+        System.out.println("Reverse BinaryString");
+        System.out.println("<==================>");
         nums.stream()
-                .map(MapChallengeMethods::returnQuotient)
+                .map(MapChallengeMethods::returnBinaryString)
                 .map(MapChallengeMethods::returnQuotientInverted)
-                .forEach(print);
+                .forEachOrdered(string -> {
+                    System.out.printf("| %s ", string);
+                });
+
+        // 3 - Converter de volta para inteiro => "011" => 3
+        System.out.println("\n<==================>");
+        System.out.println("BinaryString to Int");
+        System.out.println("<==================>");
+        nums.stream()
+                .map(MapChallengeMethods::returnBinaryString)
+                .map(MapChallengeMethods::retrunToNumber)
+                .forEachOrdered(number -> {
+                    System.out.printf("| %d ", number);
+                });
+
+
+        //.forEach(print);
+
     }
 }
