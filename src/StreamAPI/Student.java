@@ -1,5 +1,7 @@
 package StreamAPI;
 
+import java.util.Objects;
+
 public class Student {
     final String name;
     final double grade;
@@ -14,5 +16,7 @@ public class Student {
         this.goodBehavior = goodBehavior;
     }
 
-
+    public String toString(){
+        return name + " have the grade " + grade;
+    }
 }
