@@ -3,9 +3,9 @@ package Exception;
 import java.util.Objects;
 
 public class Student {
-    final String name;
-    final double grade;
-    final boolean goodBehavior;
+    public final String name;
+    public final double grade;
+    public final boolean goodBehavior;
 
     public Student(String name, double grade) {
         this(name, grade, true);
