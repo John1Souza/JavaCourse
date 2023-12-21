@@ -1,4 +1,4 @@
-package StreamAPI;
+package Exception;
 
 import java.util.Objects;
 
