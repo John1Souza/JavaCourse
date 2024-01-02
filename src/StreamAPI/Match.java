@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-public class Filter {
+public class Match {
     public static void main(String[] args) {
         Student s1 = new Student("Ana", 7.8);
         Student s2 = new Student("Bia", 5.8);
@@ -17,13 +17,16 @@ public class Filter {
         List<Student> studentsList = Arrays.asList(s1,s2,s3,s4,s5,s6);
 
         Predicate<Student> approved = a -> a.grade >= 7;
+        Predicate<Student> disapproved = approved.negate();
         Function<Student, String> congratsApproved =
                 a -> "Congratulations " + a.name + "! You're approved!!!";
 
-        studentsList.stream()
-                .filter(approved)
-                .map(congratsApproved)
-                .forEach(System.out::println);
+        System.out.println(studentsList.stream().allMatch(approved));
+        System.out.println(studentsList.stream().anyMatch(approved));
+        System.out.println(studentsList.stream().noneMatch(approved));
+
 
     }
+
+
 }
