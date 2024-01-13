@@ -28,7 +28,6 @@ public class Observer {
 
             }
 
-
             public void focusLost(FocusEvent e) {
 
             }
