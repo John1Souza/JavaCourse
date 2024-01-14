@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class CreatePeoplesTable {
+public class CreatePeopleTable {
     public static void main(String[] args) throws SQLException {
         Connection connection = ManufacturesConnection.getConnection();
 
@@ -16,5 +16,6 @@ public class CreatePeoplesTable {
         stmt.execute(sql);
 
         System.out.println("table created successfully!");
+        connection.close();
     }
 }
