@@ -13,6 +13,8 @@ public class CreateDatabase {
 
         Connection connection = DriverManager.getConnection(url, user, password);
 
+//        Connection connection = ManufacturesConnection.getConnection();
+
         Statement stmt = connection.createStatement();
         stmt.execute("CREATE DATABASE IF NOT EXISTS java_course");
 
