@@ -25,6 +25,16 @@ public class DAO {
         }
     }
 
+    public void close(){
+        try {
+            getConnection().close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            connection = null;
+        }
+    }
+
     private void addAttribute(PreparedStatement stmt, Object[] attributes) throws SQLException{
         int indice = 1;
         for (Object attribute: attributes){
